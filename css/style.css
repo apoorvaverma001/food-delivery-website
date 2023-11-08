@@ -1,0 +1,112 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height: 59px;
+
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+
+}
+
+/* Navigation bar: logo and image  */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 56px;
+    margin: 3px 6px;
+}
+
+/* navigation bar : list styling  */
+#navbar {
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    margin: 30px ;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+ 
+#navbar ul li{
+    display: flex;
+    color: antiquewhite; 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    background: url(../images/bg.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#home hi{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+/* utility classes  */
+.h-primary{
+    color: black;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: burlywood;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
